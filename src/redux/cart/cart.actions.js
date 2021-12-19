@@ -5,4 +5,9 @@ const toggleHidden = () => ({
     type: CartTypes.TOGGLE_HIDDEN
 })
 
-export { toggleHidden }
+const addItem = (item) => ({
+    type: CartTypes.ADD_ITEM,
+    payload: item
+})
+
+export { toggleHidden , addItem }
