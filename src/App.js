@@ -8,6 +8,7 @@ import React from "react";
 import {auth, createUser} from "./firebase/firebase.util";
 import {connect} from "react-redux";
 import {setCurrentUser} from "./redux/user/user.actions";
+import Checkout from "./pages/checkout/checkout.component";
 
 
 class App extends React.Component{
@@ -56,6 +57,7 @@ class App extends React.Component{
                     <Route exact path="/" element={<Home/>} />
                     <Route exact path="/shop" element={<ShopPage/>} />
                     <Route exact path="/signIn" element={<SigninAndSignupPage/>} />
+                    <Route exact path="/checkout" element={<Checkout/>} />
                     <Route exact path="*" element={<div>NOT FOUND</div>} />
                 </Routes>
             </div>

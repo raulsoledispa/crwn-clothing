@@ -10,4 +10,9 @@ const addItem = (item) => ({
     payload: item
 })
 
-export { toggleHidden , addItem }
+const removeItem = (item) => ({
+    type: CartTypes.REMOVE_ITEM,
+    payload: item
+})
+
+export { toggleHidden , addItem, removeItem }
